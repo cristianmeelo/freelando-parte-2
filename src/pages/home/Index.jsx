@@ -1,21 +1,22 @@
 import { Col, Container, Row } from "react-grid-system";
-import { Botao } from "../componentes/Botao/Botao";
-import { Cabecalho } from "../componentes/Cabecalho/Cabecalho";
-import { CampoTexto } from "../componentes/CampoTexto/CampoTexto";
-import { Card } from "../componentes/Card/Card";
-import { Estilos } from "../componentes/EstilosGlobais/Estilos";
-import { FreelandoLogo } from "../componentes/Icones/FreelandoLogo";
-import { IconeInstagram } from "../componentes/Icones/IconeInstagram";
-import { IconeTwitch } from "../componentes/Icones/IconeTwitch";
-import { IconeTwitter } from "../componentes/Icones/IconeTwitter";
-import { IconeWhatsApp } from "../componentes/Icones/IconeWhatsApp";
-import { Link } from "../componentes/Link/Link";
-import { ItemListaInline } from "../componentes/Lista/ItemListaInline";
-import { ListaInline } from "../componentes/Lista/ListaInline";
-import { ListaSupensa } from "../componentes/ListaSuspensa/ListaSuspensa";
-import { ProvedorTema } from "../componentes/ProvedorTema/ProvedorTema";
-import { Rodape } from "../componentes/Rodape/Rodape";
-import { Tipografia } from "../componentes/Tipografia/Tipografia";
+import { Botao } from "../../componentes/Botao/Botao";
+import { Cabecalho } from "../../componentes/Cabecalho/Cabecalho";
+import { CampoTexto } from "../../componentes/CampoTexto/CampoTexto";
+import { Card } from "../../componentes/Card/Card";
+import { Estilos } from "../../componentes/EstilosGlobais/Estilos";
+import { FreelandoLogo } from "../../componentes/Icones/FreelandoLogo";
+import { IconeInstagram } from "../../componentes/Icones/IconeInstagram";
+import { IconeTwitch } from "../../componentes/Icones/IconeTwitch";
+import { IconeTwitter } from "../../componentes/Icones/IconeTwitter";
+import { IconeWhatsApp } from "../../componentes/Icones/IconeWhatsApp";
+import { Link } from "../../componentes/Link/Link";
+import { ItemListaInline } from "../../componentes/Lista/ItemListaInline";
+import { ListaInline } from "../../componentes/Lista/ListaInline";
+import { ListaSupensa } from "../../componentes/ListaSuspensa/ListaSuspensa";
+import { ProvedorTema } from "../../componentes/ProvedorTema/ProvedorTema";
+import { Rodape } from "../../componentes/Rodape/Rodape";
+import { Tipografia } from "../../componentes/Tipografia/Tipografia";
+import React from "react";
 
 const estadosBrasileiros = [
   { "text": "Acre", "value": "AC" },
@@ -47,7 +48,7 @@ const estadosBrasileiros = [
   { "text": "Tocantins", "value": "TO" }
 ]
 
-const PaginaInicial = () => {
+export const Home = () => {
   return (
     <ProvedorTema>
       <Estilos />
@@ -64,7 +65,7 @@ const PaginaInicial = () => {
         </Container>
       </Cabecalho>
       <Row justify="center">
-        <Col xxx={6} xxl={6} xl={6} lg={6} md={8} sm={12} style={{ margin: '80px 0' }}>
+        <Col xxxl={6} xxl={6} xl={6} lg={6} md={8} sm={12} style={{ margin: '80px 0' }}>
           <Card>
             <Tipografia variante="h1" componente="h1">
               Freelando
@@ -154,4 +155,3 @@ const PaginaInicial = () => {
   );
 }
 
-export default PaginaInicial;

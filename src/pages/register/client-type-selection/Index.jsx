@@ -5,10 +5,13 @@ import { Col, Row } from 'react-grid-system'
 import client from "../../../assets/cliente.png"
 import freelancer from "../../../assets/freela.png"
 import { Link } from '../../../componentes/Link/Link'
+import { Link as RouterLink } from 'react-router-dom'
 
 export const ClientTypeSelection = () => {
     return (
-        <>
+
+
+        <div style={{ textAlign: "center" }}>
             <Tipografia variante="h1" componente="h1">
                 Crie seu cadastro
             </Tipografia>
@@ -17,19 +20,21 @@ export const ClientTypeSelection = () => {
             </Tipografia>
             <Row>
                 <Col md={6} sm={12}>
-                    <img src={client} alt="client" />
-                    <Tipografia variante="body" componente="body">
-                        Sou cliente preciso de um freela
-                    </Tipografia>
+                    <RouterLink to="interesteds">
+                        <img src={client} alt="client" />
+                        <Tipografia variante="body" componente="body">
+                            Sou cliente preciso de um freela!
+                        </Tipografia>
+                    </RouterLink>
                 </Col>
                 <Col md={6} sm={12}>
                     <img src={freelancer} alt="freelancer" />
                     <Tipografia variante="body" componente="body">
-                        Sou freela e preciso de cliente
+                        Sou freela e preciso de um cliente!
                     </Tipografia>
                 </Col>
             </Row>
-            <div style={{ textAlign: "center" }}>
+            <div >
                 <Tipografia variante="body2" componente="body2">
                     Já tem conta?
                 </Tipografia>
@@ -39,6 +44,6 @@ export const ClientTypeSelection = () => {
                     </Link>
                 </p>
             </div>
-        </>
+        </div>
     )
 }

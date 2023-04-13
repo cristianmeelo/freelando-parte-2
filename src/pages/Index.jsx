@@ -14,23 +14,25 @@ import { Tipografia } from '../componentes/Tipografia/Tipografia'
 import { Outlet } from 'react-router-dom'
 
 export const LayoutBase = () => {
-    return (
-        <>
-            <Cabecalho>
-                <Container>
-                    <Row align='center'>
-                        <Col>
-                            <FreelandoLogo />
-                        </Col>
-                        <Col style={{ textAlign: 'right' }}>
-                            <Link>Login</Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </Cabecalho>
-            <Outlet/>
+  return (
+    <>
+      <Cabecalho>
+        <Container>
+          <Row align='center'>
+            <Col>
+              <FreelandoLogo />
+            </Col>
+            <Col style={{ textAlign: 'right' }}>
+              <Link>Login</Link>
+            </Col>
+          </Row>
+        </Container>
+      </Cabecalho>
+      <Container>
+        <Outlet />
+      </Container>
 
-            <Rodape>
+      <Rodape>
         <Container>
           <Row align="center">
             <Col>
@@ -65,6 +67,6 @@ export const LayoutBase = () => {
           </Row>
         </Container>
       </Rodape>
-        </>
-    )
+    </>
+  )
 }

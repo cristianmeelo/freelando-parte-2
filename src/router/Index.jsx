@@ -4,6 +4,9 @@ import { Home } from "../pages/home/Index";
 import { ClientTypeSelection } from "../pages/register/client-type-selection/Index";
 import { LayoutBaseRegister } from "../pages/register/Index";
 import { LayoutBase } from "../pages/Index";
+import { Interested } from "../pages/register/interested/Index";
+
+
 
 
 export const router = createBrowserRouter([
@@ -21,7 +24,7 @@ export const router = createBrowserRouter([
                     },
                     {
                         path: "interesteds",
-                        element: <h1>Interesses</h1>
+                        element: <Interested />,
                     },
                     {
                         path: "dados-pessoais",

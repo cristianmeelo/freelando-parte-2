@@ -5,7 +5,7 @@ const usuarioInicial = {
 	interesse: "",
 	nomeCompleto: "",
 	uf: "",
-	city: "",
+	cidade: "",
 	email: "",
 	senha: "",
 	senhaConfirmada: "",
@@ -86,14 +86,15 @@ export const CadastroUsuarioProvider = ({ children }) => {
 			}
 		})
 	}
-	const setSenhaConfirmada = (senhaConfirnada) => {
+	const setSenhaConfirmada = (senhaConfirmada) => {
 		setUsuario((estadoAnterior) => {
 			return {
 				...estadoAnterior,
-				senhaConfirnada,
+				senhaConfirmada,
 			}
 		})
 	}
+
 	const contexto = {
 		usuario,
 		setPerfil,

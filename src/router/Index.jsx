@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom"
 import React from "react";
-import { Home } from "../pages/home/Index";
 import { ClientTypeSelection } from "../pages/register/client-type-selection/Index";
 import { LayoutBaseRegister } from "../pages/register/Index";
 import { LayoutBase } from "../pages/Index";

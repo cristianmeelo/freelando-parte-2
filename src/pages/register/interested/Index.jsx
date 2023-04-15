@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { Tipografia } from '../../../componentes/Tipografia/Tipografia'
 import { GroupRadio } from '../../../componentes/Radio/GroupRadio'
 import { Row, Col } from 'react-grid-system';
 import { Botao } from '../../../componentes/Botao/Botao';
 import { Link } from 'react-router-dom';
+import { CabecalhoCadastro } from '../../../componentes/CabecalhoCadastro/Index';
 
 
 const options = [
@@ -38,19 +38,19 @@ export const Interested = () => {
     const [option, setOption] = useState("")
     return (
         <>
-            <Tipografia variante="h1" componente="h1">
-                Crie seu cadastro
-            </Tipografia>
-            <Tipografia variante="h3" componente="h2">
-                Qual é a área de interesse?
-            </Tipografia>
+            <CabecalhoCadastro
+                titulo={"Crie seu cadastro"}
+                subtitulo={"Qual é a área de interesse?"}
+                descricao={undefined}
+            />
+
             <GroupRadio opcoes={options} valor={option} onChange={setOption} />
             <Row>
                 <Col lg={6} md={6} sm={6}>
-                <Link to="/cadastro">
-                    <Botao variante="secundaria">
-                        Anterior
-                    </Botao>
+                    <Link to="/cadastro">
+                        <Botao variante="secundaria">
+                            Anterior
+                        </Botao>
                     </Link>
 
                 </Col>

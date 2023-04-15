@@ -42,7 +42,7 @@ export const Interested = () => {
         if (!possoSelecionarInteresse()) {
             navegar("/cadastro")
         }
-    }, [navegar])
+    }, [navegar, possoSelecionarInteresse])
 
 
     return (

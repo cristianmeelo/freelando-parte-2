@@ -1,6 +1,8 @@
 import React from 'react'
-import { Cabecalho } from '../componentes/Cabecalho/Cabecalho'
+import { Link as LinkRouter } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import { Col, Container, Row } from 'react-grid-system'
+import { Cabecalho } from '../componentes/Cabecalho/Cabecalho'
 import { FreelandoLogo } from '../componentes/Icones/FreelandoLogo'
 import { Link } from '../componentes/Link/Link'
 import { IconeInstagram } from '../componentes/Icones/IconeInstagram'
@@ -11,7 +13,7 @@ import { ItemListaInline } from '../componentes/Lista/ItemListaInline'
 import { ListaInline } from '../componentes/Lista/ListaInline'
 import { Rodape } from '../componentes/Rodape/Rodape'
 import { Tipografia } from '../componentes/Tipografia/Tipografia'
-import { Outlet } from 'react-router-dom'
+import { Botao } from '../componentes/Botao/Botao'
 
 export const LayoutBase = () => {
   return (
@@ -25,9 +27,12 @@ export const LayoutBase = () => {
             <Col style={{ textAlign: 'right' }}>
               <Link>Login</Link>
             </Col>
+            <LinkRouter to="/cadastro">
+              <Botao>Home</Botao>
+            </LinkRouter>
           </Row>
         </Container>
-      </Cabecalho>
+      </Cabecalho >
       <Container>
         <Outlet />
       </Container>

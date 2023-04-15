@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "@emotion/styled"
 import { Link } from "react-router-dom"
 import { Row, Col } from "react-grid-system"
@@ -13,6 +13,11 @@ const ImagemEstilizada = styled.img`
 `
 
 export const Concluded = () => {
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [])
+
 	return (
 		<>
 			<CabecalhoCadastro titulo={"Seu perfil está completo!"} subtitulo={undefined} descricao={"Agora é só começar a se conectar com os melhores freelancers do mercado!"} />

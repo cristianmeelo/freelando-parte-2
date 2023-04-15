@@ -1,7 +1,7 @@
 import React from "react"
 import { Row, Col } from "react-grid-system"
 import { Botao } from "../../../componentes/Botao/Botao"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { CampoTexto } from "../../../componentes/CampoTexto/CampoTexto"
 import { ListaSupensa } from "../../../componentes/ListaSuspensa/ListaSuspensa"
 import { estadosBrasileiros } from "../../../helpers/states"
@@ -10,11 +10,13 @@ import { useCadastroUsuarioContext } from "../../../context/register/Index"
 
 
 export const PersonalData = () => {
-	const { usuario, setNomeCompleto, setCidade, setEmail, setSenha, setSenhaConfirmada, setUf, submeterUsuario } = useCadastroUsuarioContext()
+	const { usuario, setNomeCompleto, setCidade, setEmail, setSenha, setSenhaConfirmada, setUf, submeterUsuario } = useCadastroUsuarioContext();
+	const navegar = useNavigate();
 
 	const finalizarCadastro = (evento) => {
-		evento.preventDefault()
-		submeterUsuario()
+		evento.preventDefault();
+		submeterUsuario();
+		navegar("/cadastro/concluido");
 	}
 
 	return (

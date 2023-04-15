@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { GroupRadio } from '../../../componentes/Radio/GroupRadio'
 import { Row, Col } from 'react-grid-system';
 import { Botao } from '../../../componentes/Botao/Botao';
 import { Link } from 'react-router-dom';
 import { CabecalhoCadastro } from '../../../componentes/CabecalhoCadastro/Index';
+import { useCadastroUsuarioContext } from '../../../context/register/Index';
 
 
 const options = [
@@ -35,7 +36,8 @@ const options = [
 ];
 
 export const Interested = () => {
-    const [option, setOption] = useState("")
+    const { usuario, setInteresse } = useCadastroUsuarioContext();
+
     return (
         <>
             <CabecalhoCadastro
@@ -44,7 +46,12 @@ export const Interested = () => {
                 descricao={undefined}
             />
 
-            <GroupRadio opcoes={options} valor={option} onChange={setOption} />
+            <GroupRadio
+                opcoes={options}
+                valor={usuario.interesse}
+                onChange={setInteresse}
+            />
+
             <Row>
                 <Col lg={6} md={6} sm={6}>
                     <Link to="/cadastro">

@@ -1,14 +1,16 @@
-import { Link as RouterLink } from "react-router-dom"
 import React from "react"
+import { Link as RouterLink } from "react-router-dom"
 import { Tipografia } from "../../../componentes/Tipografia/Tipografia"
 import { Col, Row } from "react-grid-system"
 import { Link } from "../../../componentes/Link/Link"
-
+import { useCadastroUsuarioContext } from "../../../context/register/Index"
 
 import client from "../../../assets/cliente.png"
 import freelancer from "../../../assets/freela.png"
 
 export const ClientTypeSelection = () => {
+	const { setPerfil } = useCadastroUsuarioContext();
+
 	return (
 		<div style={{ textAlign: "center" }}>
 			<Tipografia variante="h1" componente="h1">
@@ -19,7 +21,7 @@ export const ClientTypeSelection = () => {
 			</Tipografia>
 			<Row>
 				<Col md={6} sm={12}>
-					<RouterLink to="interesteds">
+					<RouterLink to="interesteds" onClick={() => setPerfil("cliente")}>
 						<img src={client} alt="client" />
 						<Tipografia variante="body" componente="body">
 							Sou cliente preciso de um freela!

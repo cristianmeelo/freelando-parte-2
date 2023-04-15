@@ -1,5 +1,6 @@
 import styled from "@emotion/styled"
 
+
 const LabelEstilizada = styled.label`
     display: block;
     width: 100%;
@@ -25,9 +26,14 @@ const InputEstilizado = styled.input`
     line-height: 17px;
 `
 
-export const CampoTexto = ({ titulo }) => {
-    return (<LabelEstilizada>
-        {titulo}
-        <InputEstilizado />
-    </LabelEstilizada>)
+export const CampoTexto = ({ titulo, valor, onChange, tipo = "text" }) => {
+    return (
+        <LabelEstilizada>
+            {titulo}
+            <InputEstilizado
+                value={valor}
+                onChange={evento => onChange(evento.target.value)}
+                type={tipo}
+            />
+        </LabelEstilizada>)
 }

@@ -1,11 +1,12 @@
+import { Link as RouterLink } from "react-router-dom"
 import React from "react"
 import { Tipografia } from "../../../componentes/Tipografia/Tipografia"
 import { Col, Row } from "react-grid-system"
+import { Link } from "../../../componentes/Link/Link"
+
 
 import client from "../../../assets/cliente.png"
 import freelancer from "../../../assets/freela.png"
-import { Link } from "../../../componentes/Link/Link"
-import { Link as RouterLink } from "react-router-dom"
 
 export const ClientTypeSelection = () => {
 	return (

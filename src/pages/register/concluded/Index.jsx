@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { Link } from "react-router-dom"
-import { Tipografia } from "../../../componentes/Tipografia/Tipografia"
 import { Row, Col } from "react-grid-system"
 import { Botao } from "../../../componentes/Botao/Botao"
 
 import concludedClient from "../../../assets/cliente-concluido.png"
+import { CabecalhoCadastro } from "../../../componentes/CabecalhoCadastro/Index"
 
 const ImagemEstilizada = styled.img`
 	max-width: 100%;
@@ -15,14 +15,8 @@ const ImagemEstilizada = styled.img`
 export const Concluded = () => {
 	return (
 		<>
-			<div style={{ textAlign: "center" }}>
-				<Tipografia variante="h1" componente="h1">
-					Seu perfil está completo!
-				</Tipografia>
-				<Tipografia variante="body" componente="body">
-					Agora é só começar a se conectar com os melhores freelancers do mercado!
-				</Tipografia>
-			</div>
+			<CabecalhoCadastro titulo={"Seu perfil está completo!"} subtitulo={undefined} descricao={"Agora é só começar a se conectar com os melhores freelancers do mercado!"} />
+
 			<Row>
 				<figure>
 					<ImagemEstilizada src={concludedClient} alt="person" />

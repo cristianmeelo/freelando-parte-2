@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 const usuarioInicial = {
 	perfil: "",
@@ -21,6 +22,8 @@ export const CadastroUsuarioContext = createContext({
 	setEmail: () => null,
 	setSenha: () => null,
 	setSenhaConfirmada: () => null,
+	submeterUsuario: () => null,
+	possoSelecionarInteresse: () => null,
 })
 
 export const useCadastroUsuarioContext = () => {
@@ -28,7 +31,9 @@ export const useCadastroUsuarioContext = () => {
 }
 
 export const CadastroUsuarioProvider = ({ children }) => {
-	const [usuario, setUsuario] = useState(usuarioInicial)
+	const [usuario, setUsuario] = useState(usuarioInicial);
+	const navegar = useNavigate();
+
 
 	const setPerfil = (perfil) => {
 		setUsuario((estadoAnterior) => {
@@ -94,6 +99,14 @@ export const CadastroUsuarioProvider = ({ children }) => {
 			}
 		})
 	}
+	const submeterUsuario = () => {
+		console.log("%cIndex.jsx line:17 usuario", "color: #26bfa5;", usuario);
+		navegar("/cadastro/concluido");
+	}
+	const possoSelecionarInteresse = () => {
+		return !!usuario.perfil
+	}
+
 
 	const contexto = {
 		usuario,
@@ -105,6 +118,8 @@ export const CadastroUsuarioProvider = ({ children }) => {
 		setEmail,
 		setSenha,
 		setSenhaConfirmada,
+		submeterUsuario,
+		possoSelecionarInteresse
 	}
 
 	return <CadastroUsuarioContext.Provider value={contexto}>{children}</CadastroUsuarioContext.Provider>

@@ -1,42 +1,49 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { GroupRadio } from '../../../componentes/Radio/GroupRadio'
 import { Row, Col } from 'react-grid-system';
 import { Botao } from '../../../componentes/Botao/Botao';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { CabecalhoCadastro } from '../../../componentes/CabecalhoCadastro/Index';
 import { useCadastroUsuarioContext } from '../../../context/register/Index';
 
 
-const options = [
+const opcoes = [
     {
-        value: 1,
-        label: "TI e Programação",
+        valor: 1,
+        label: 'TI e Programação',
     },
     {
-        value: 2,
-        label: "Design e Multimídia",
+        valor: 2,
+        label: 'Design e Multimídia',
     },
     {
-        value: 3,
-        label: "Revisão",
+        valor: 3,
+        label: 'Revisão',
     },
     {
-        value: 4,
-        label: "Tradução",
+        valor: 4,
+        label: 'Tradução',
     },
     {
-        value: 5,
-        label: "Transcrição",
-
+        valor: 5,
+        label: 'Transcrição',
     },
     {
-        value: 6,
-        label: "Marketing",
-    }
-];
+        valor: 6,
+        label: 'Marketing',
+    },
+]
 
 export const Interested = () => {
-    const { usuario, setInteresse } = useCadastroUsuarioContext();
+    const { usuario, setInteresse, possoSelecionarInteresse } = useCadastroUsuarioContext();
+    const navegar = useNavigate();
+
+    useEffect(() => {
+        if (!possoSelecionarInteresse()) {
+            navegar("/cadastro")
+        }
+    }, [navegar])
+
 
     return (
         <>
@@ -47,7 +54,7 @@ export const Interested = () => {
             />
 
             <GroupRadio
-                opcoes={options}
+                opcoes={opcoes}
                 valor={usuario.interesse}
                 onChange={setInteresse}
             />

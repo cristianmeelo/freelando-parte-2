@@ -90,7 +90,12 @@ export const ListaSupensa = ({ titulo, opcoes, valor, onChange }) => {
 	return (
 		<LabelEstilizada>
 			{titulo}
-			<BotaoEstilizado estaAberta={estaAberta} onClick={() => alternarVisibilidade(!estaAberta)} onKeyDown={manipularTeclaDoTeclado}>
+			<BotaoEstilizado
+				estaAberta={estaAberta}
+				onClick={() => alternarVisibilidade(!estaAberta)}
+				onKeyDown={manipularTeclaDoTeclado}
+				type="button"
+			>
 				<div>{valor ? valor.text : "Selecione"}</div>
 				<div>
 					<span>{estaAberta ? "▲" : "▼"}</span>

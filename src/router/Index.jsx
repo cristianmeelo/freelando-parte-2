@@ -5,6 +5,8 @@ import { ClientTypeSelection } from "../pages/register/client-type-selection/Ind
 import { LayoutBaseRegister } from "../pages/register/Index";
 import { LayoutBase } from "../pages/Index";
 import { Interested } from "../pages/register/interested/Index";
+import { PersonalData } from "../pages/register/personal-data/Index";
+import { Concluded } from "../pages/register/concluded/Index";
 
 
 
@@ -28,11 +30,11 @@ export const router = createBrowserRouter([
                     },
                     {
                         path: "dados-pessoais",
-                        element: <h1>Dados pessoais</h1>,
+                        element: <PersonalData />,
                     },
                     {
                         path: "concluido",
-                        element: <h1>Concluido</h1>,
+                        element: <Concluded />,
                     }]
             }],
     },

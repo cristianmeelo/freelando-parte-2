@@ -11,11 +11,11 @@
   </tr>
 </table>
 
-![](https://github.com/cristianmeelo/react-app-github-finder/blob/main/thumbnail-en.png?raw=true)
+![](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-en.png?raw=true)
 
 <img src="mockup.gif" alt="Image App" >
 <div align="center">
-<a href="https://react-app-github-finder-cristianmeelo.vercel.app/">
+<a href="https://react-app-freelando.vercel.app/">
   <img src="https://img.shields.io/badge/-CHECK%20HERE-red"
   alt="Image App" >
 </a>
@@ -23,7 +23,7 @@
 
 <br/>
 
-# GitHub Finder
+# Freelando
 
 The main App functionalitys is to search for [GitHub](https://github.com/) users and bring the data via API response.
 
@@ -54,13 +54,13 @@ Then go to <a href="http://localhost:3000/">http://localhost:3000/</a> in your b
 
 ## 📚 More tutorial information
 
-Github finder is an application for github profiles consultation, developed from the tutorial [Matheus Battisti](https://www.youtube.com/@MatheusBattisti). The main idea of ​​this implementation tutorial is to learn and develop the concepts of typescript, a programming language that is being demanded by the market, and honestly, I feel more comfortable using it than not using it, but it takes a while to understand the depth of its usability. React's routing system is usually used with router router, there are some particularities between its versions, and learning new ways of architecting a project greatly strengthens our baggage.
+Freelando is an application for github profiles consultation, developed from the tutorial [Matheus Battisti](https://www.youtube.com/@MatheusBattisti). The main idea of ​​this implementation tutorial is to learn and develop the concepts of typescript, a programming language that is being demanded by the market, and honestly, I feel more comfortable using it than not using it, but it takes a while to understand the depth of its usability. React's routing system is usually used with router router, there are some particularities between its versions, and learning new ways of architecting a project greatly strengthens our baggage.
 
 | :placard: Vitrine.Dev |                                                                                                             |
 | --------------------- | ----------------------------------------------------------------------------------------------------------- |
-| :sparkles: Name       | **GitHub Finder**                                                                                           |
+| :sparkles: Name       | **Freelando**                                                                                               |
 | :label: Technologies  | React, Vite, TypeScript, CSS Module, React Icons,React Router,Vercel Deployment,GitHub ( used Technologies) |
 | :rocket: URL          | https://react-app-github-finder-cristianmeelo.vercel.app/                                                   |
 | :fire: Challenge      | https://www.youtube.com/watch?v=3sQITRihW_Av=3sQITRihW_Av=3sQITRihW_A                                       |
 
-![](https://github.com/cristianmeelo/react-app-github-finder/blob/main/thumbnail-mockup.png?raw=true#vitrinedev)
+![](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-mockup.png?raw=true#vitrinedev)

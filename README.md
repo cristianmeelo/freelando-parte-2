@@ -1,40 +1,65 @@
-![Freelando](thumbnail.png)
+<table align="right">
+  <tr>
+    <td>
+      <a href="README-EN.md">🇺🇸 English (apenas no GitHub)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="README.md">🇧🇷 Português</a>
+    </td>
+  </tr>
+</table>
+
+![](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail.png?raw=true)
+
+<img src="mockup.gif" alt="Image App" >
+<div align="center">
+<a href="https://react-app-freelando.vercel.app/">
+  <img src="https://img.shields.io/badge/-CONFIRA%20AQUI-red" alt="Image App" >
+</a>
+</div>
+
+<br/>
 
 # Freelando
 
-O Freelando é uma StartUP.
-Nesse momento, é um MVP que tá só começando e ainda tem muitas funcionalidades novas para serem desenvolvidas.
+As principais funcionalidades do aplicativo são procurar usuários do [GitHub](https://github.com/) e trazer os dados por meio da resposta da API.
 
-<img src="screencapture.png" alt="Imagem do Freelando" width="50%">
+## 🔨 Recursos do projeto
 
-## 🔨 Funcionalidades do projeto
+Em uma página, é possível buscar perfis hospedados na plataforma github, trazendo detalhes de seguidores e a quantidade de pessoas que o perfil segue.
 
-Nesse primeiro momento, nós temos a página que foi idealizada como a primeiro entrega do time de desenvolvimento.
+O GitHub é uma plataforma de gerenciamento e hospedagem de código-fonte que permite aos desenvolvedores colaborar em projetos de software. Fundado em 2008, o GitHub rapidamente se tornou um dos principais repositórios de código aberto na Internet.
 
-O [Figma dessa aplicação você encontra aqui](https://www.figma.com/file/DGIzbfXEi27oiKzI0nGMIV/Freelando-%7C-WebApp-com-React?node-id=244%3A11524&t=J2NfqHrvVIr0jsgs-0).
+## ⚙️ Técnicas e tecnologias usadas
 
-## ✔️ Técnicas e tecnologias utilizadas
-
-Se liga nessa lista de tudo que usaremos nesse curso:
+Check out this list of everything we will use in this app:
 
 - `React`
-- `Create React App`
-- `Emotion`
-- `React Grid System`
-- `Eventos do Teclado`
+- `Vite`
+- `TypeScript`
+- `CSS Module`
+- `React Icons`
+- `React Router`
+- `Vercel Deployment`
 - `GitHub`
-- `Trello`
-- `Figma`
 
-E muito mais!
+## 🛠️ Abra e execute o projeto
 
-## 🛠️ Abrir e rodar o projeto
+Para abrir e executar o projeto, execute `npm i` para instalar as dependências e `npm run dev` para iniciar o projeto.
 
-Para abrir e rodar o projeto, execute `npm i` para instalar as dependências e `npm start` para inicar o projeto.
+Em seguida, vá para <a href="http://localhost:3000/">http://localhost:3000/</a> em seu navegador.
 
-Depois, acesse <a href="http://localhost:3000/">http://localhost:3000/</a> no seu navegador.
+## 📚 Mais informações do tutorial
 
-## 📚 Mais informações do curso
+O GithubFinder é um aplicativo para consulta de perfis do github, desenvolvido a partir do tutorial [Matheus Battisti](https://www.youtube.com/@MatheusBattisti). A ideia principal desse tutorial de implementação é aprender e desenvolver os conceitos de typescript, uma linguagem de programação que está sendo exigida pelo mercado, e sinceramente, me sinto mais confortável em usar do que não usar, mas demora um pouco para entender a profundidade de sua usabilidade. O sistema de roteamento do React geralmente é usado com react-router,mas existem algumas particularidades entre suas versões, e aprender novas formas de arquitetar um projeto fortalece muito nossa bagagem.
 
-O Freelando é uma StartUP fictícia utilizada nesse curso da Alura.
-A ideia principal desse curso é evoluir ainda mais os conhecimentos em React e estilização de componentes.
+| :placard: Vitrine.Dev |                                                                                                                 |
+| --------------------- | --------------------------------------------------------------------------------------------------------------- |
+| :sparkles: Nome       | **Freelando**                                                                                                   |
+| :label: Tecnologias   | React, Vite, TypeScript, CSS Module, React Icons,React Router,Vercel Deployment,GitHub (tecnologias utilizadas) |
+| :rocket: URL          | https://react-app-freelando.vercel.app/                                                                         |
+| :fire: Desafio        | https://www.youtube.com/watch?v=3sQITRihW_Av=3sQITRihW_A                                                        |
+
+![](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-mockup.png?raw=true#vitrinedev)

@@ -24,7 +24,7 @@
 
 # Freelando
 
-Freelando é umma plataforma fake para clientes criarem seu cadastro e encontrarem freelancers de diversas áreas.
+Freelando é uma plataforma fake para clientes criarem seu cadastro e encontrarem freelancers de diversas áreas.
 
 ## 🔨 Recursos do projeto
 

@@ -33,7 +33,8 @@ export const LayoutBase = () => {
           </Row>
         </Container>
       </Cabecalho>
-      <Container>
+
+      <Container style={{ minHeight: "66vh" }}>
         <Outlet />
       </Container>
 
@@ -43,7 +44,7 @@ export const LayoutBase = () => {
             <Col>
               <FreelandoLogo height={40} width={176} />
               <Tipografia variante="legenda" componente="legenda">
-                Desenvolvido por Alura. Projeto fictício sem fins comerciais.
+                Desenvolvido por Cristian & Alura. Projeto fictício sem fins comerciais.
               </Tipografia>
             </Col>
             <Col style={{ textAlign: "right" }}>

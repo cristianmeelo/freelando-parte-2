@@ -13,6 +13,9 @@
 
 ![](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-en.png?raw=true)
 
+![]([https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-en.png?raw=true](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-mockup.png))
+
+
 <img src="mockup.gif" alt="Image App" >
 <div align="center">
 <a href="https://react-app-freelando.vercel.app/">

@@ -13,7 +13,7 @@
 
 ![](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-en.png?raw=true)
 
-![]([https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-en.png?raw=true](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-mockup.png))
+![](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-mockup.png)
 
 
 <img src="mockup.gif" alt="Image App" >

@@ -11,7 +11,7 @@
   </tr>
 </table>
 
-![](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail.png?raw=true)
+![](https://github.com/cristianmeelo/react-app-freelando/blob/main/thumbnail-mockup.png?raw=true)
 
 <img src="mockup.gif" alt="Image App" >
 <div align="center">
